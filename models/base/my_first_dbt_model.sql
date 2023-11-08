@@ -11,15 +11,9 @@
 
 with source_data as (
 
-    select * from public.actor
+    select * from {{ ref('actor')}} 
 
 )
 
-select *
-from source_data
+select * from source_data
 
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
-
--- where id is not null

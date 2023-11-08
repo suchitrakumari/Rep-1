@@ -32,6 +32,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   demo_dbt_proj:
-    # Config indicated by + and applies to all files under models/example/
-    example:
+    # Config indicated by + and applies to all files under models/base/
+    base:
       +materialized: view
+
+    reporting: # # models in `models/reporting/ will be rendered to the "*_consumption" schema
+      my_second_dbt_model:
+        materialized: view
+        schema: consumption
+      
