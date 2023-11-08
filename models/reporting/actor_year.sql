@@ -1,5 +1,6 @@
 
--- Use the `ref` function to select from other models
+/*Create a query that lists each actor's full name, film release year and number of year wise released film. (join, aggregrate function, visualisation)
+*/
 with source  as (
     SELECT CONCAT(a.first_name,' ',a.last_name) actor_name, f.release_year
     FROM  {{ ref('my_first_dbt_model') }} a
