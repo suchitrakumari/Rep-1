@@ -1,9 +1,10 @@
 
 /*Create a query that lists each actor's full name, film release year and number of year wise released film. (join, aggregrate function, visualisation)
 */
+
 with source  as (
     SELECT CONCAT(a.first_name,' ',a.last_name) actor_name, f.release_year
-    FROM  {{ ref('my_first_dbt_model') }} a
+    FROM  {{ ref('actor') }} a
     JOIN film_actor fa ON fa.actor_id = a.actor_id
     JOIN film f ON f.film_id = fa.film_id
 
