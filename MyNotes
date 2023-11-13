@@ -37,9 +37,9 @@ xxxx
 --===========================================================
 
 git remote add origin https://github.com/suchitrakumari/Rep-1.git
+git add .
 git commit -m "third commit"
 git status
-git add https://github.com/suchitrakumari/Rep-1.git
 git push
 
 
