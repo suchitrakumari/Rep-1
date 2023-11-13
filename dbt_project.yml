@@ -37,7 +37,7 @@ models:
       +materialized: view
 
     reporting: # # models in `models/reporting/ will be rendered to the "*_consumption" schema
-      my_second_dbt_model:
-        materialized: view
+      #actor_year:
+        +materialized: view
         schema: consumption
       

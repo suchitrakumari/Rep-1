@@ -1,5 +1,7 @@
 {
     "projectManager.git.baseFolders": [
         "https://github.com/suchitrakumari/Rep-1.git"
-    ]
+    ],
+    "dbt.queryLimit": 500,
+    "dbt.enableNewLineagePanel": true
 }

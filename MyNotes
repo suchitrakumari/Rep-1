@@ -34,4 +34,12 @@ https://wiki.postgresql.org/wiki/Sample_Databases
 xxxx
 
 
+--===========================================================
+
+git remote add origin https://github.com/suchitrakumari/Rep-1.git
+git add .
+git commit -m "third commit"
+git status
+git push
+
 
